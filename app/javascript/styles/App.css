@@ -1,0 +1,42 @@
+.position-relative {
+  position: relative;
+}
+
+.filter-toggle-btn {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  transition: right 0.3s ease;
+}
+
+.filter-toggle-btn.panel-open {
+  right: 300px;
+}
+
+.main-content {
+  margin-right: 0;
+  transition: margin-right 0.3s ease;
+}
+
+.main-content.panel-open {
+  margin-right: 300px;
+}
+
+.filter-panel {
+  position: fixed;
+  right: -300px;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: white;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  overflow-y: auto;
+}
+
+.filter-panel.panel-open {
+  right: 0;
+}
